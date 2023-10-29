@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicianMoments_Demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                             <constraint firstItem="Pie-Lu-Bdr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iuj-ka-skM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AoT-re-CtO"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="AoT-re-CtO"/>
                     <connections>
                         <outlet property="verticalStackView" destination="Pie-Lu-Bdr" id="5JX-fI-GJc"/>
                     </connections>
@@ -38,7 +38,7 @@
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
-        <!--Item-->
+        <!--Search-->
         <scene sceneID="gUq-20-yvr">
             <objects>
                 <viewController id="MGv-sg-5hx" sceneMemberID="viewController">
@@ -48,13 +48,13 @@
                         <viewLayoutGuide key="safeArea" id="5VV-hj-Rzz"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="skb-CS-Mm7"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="skb-CS-Mm7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2f-Aw-EA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="-2"/>
+            <point key="canvasLocation" x="919.84732824427476" y="-2.1126760563380285"/>
         </scene>
-        <!--Item-->
+        <!--Chat-->
         <scene sceneID="kfC-c8-vbg">
             <objects>
                 <viewController id="up8-nD-TdS" sceneMemberID="viewController">
@@ -64,23 +64,23 @@
                         <viewLayoutGuide key="safeArea" id="J8X-Fi-V6R"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="j3b-zX-v9H"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="text.bubble" catalog="system" id="j3b-zX-v9H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCJ-il-miQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1656" y="-2"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="tTo-db-jiA">
             <objects>
-                <viewController id="aty-ii-xv1" sceneMemberID="viewController">
+                <viewController id="aty-ii-xv1" customClass="ProfileViewController" customModule="MusicianMoments_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U41-aS-bel">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="1Bd-bd-LXv"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Q9F-Di-GAS"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" id="Q9F-Di-GAS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOI-Eu-guU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,11 +108,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

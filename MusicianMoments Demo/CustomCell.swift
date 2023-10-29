@@ -14,6 +14,7 @@ class CustomCell: UIStackView {
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 275).isActive = true
         imageView.clipsToBounds = true // Ensure the image is clipped to the frame
         return imageView
     }()
@@ -46,9 +47,9 @@ class CustomCell: UIStackView {
         
         for _ in 0..<4 {
             let button = UIButton(type: .system)
-            button.layer.cornerRadius = button.frame.width / 2
+            button.layer.cornerRadius = 40
             button.clipsToBounds = true
-            button.widthAnchor.constraint(equalToConstant: 40).isActive = true
+            button.widthAnchor.constraint(equalToConstant: 20).isActive = true
             button.heightAnchor.constraint(equalTo: button.widthAnchor).isActive = true
             verticalStack.addArrangedSubview(button)
             circleButtons.append(button)
