@@ -78,7 +78,9 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: view.frame.size.width/3-41, height: view.frame.size.width/3-41)
+        layout.itemSize = CGSize(width: (view.frame.size.width/3)-4, height: (view.frame.size.width/3)-4)
+        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 1
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         guard let collectionView = collectionView else {
             return

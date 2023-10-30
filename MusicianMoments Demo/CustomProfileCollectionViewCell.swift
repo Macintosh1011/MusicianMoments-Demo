@@ -15,12 +15,16 @@ class CustomProfileCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "house")
         imageView.tintColor = .white
+        imageView.contentMode = .scaleAspectFit
+        imageView.clipsToBounds = true
+        
         return imageView
     }()
     
     private let mylabel: UILabel = {
         let label = UILabel()
         label.text = "08/29/2023"
+        label.textAlignment = .center
         label.textColor = .white
         return label
     }()
@@ -45,5 +49,14 @@ class CustomProfileCollectionViewCell: UICollectionViewCell {
         mylabel.frame = CGRect(x: 5, y: contentView.frame.size.height-50, width: contentView.frame.size.width-10, height: 50)
         
      
+    }
+    
+    public func configure(label: String) {
+        mylabel.text = label
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        mylabel.
     }
 }
