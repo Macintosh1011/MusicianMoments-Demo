@@ -15,7 +15,7 @@ class CustomProfileCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "house")
         imageView.tintColor = .white
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         
         return imageView
@@ -51,12 +51,15 @@ class CustomProfileCollectionViewCell: UICollectionViewCell {
      
     }
     
-    public func configure(label: String) {
+    public func configure(label: String, image: UIImage?) {
         mylabel.text = label
+        myImageView.image = image
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        mylabel.
+        mylabel.text = nil
+        myImageView.image = nil
+        
     }
 }

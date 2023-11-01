@@ -10,6 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
         
+    var postsImageArray = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9")]
     lazy var containerView: UIView = {
         let cv = UIView()
         cv.backgroundColor = UIColor(red: 81/255, green: 15/255, blue: 15/255, alpha: 1)
@@ -32,6 +33,25 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         return imageView
     }()
+    
+    let aboutTitle: UIButton = {
+        let button = UIButton()
+        button.setTitle("About", for: .normal)
+        button.setTitleColor(UIColor(red: 81/255, green: 15/255, blue: 15/255, alpha: 1), for: .normal) // Set text color to red
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        
+        return button
+    }()
+    
+    let postsTitle: UIButton = {
+        let button = UIButton()
+        button.setTitle("Posts", for: .normal)
+        button.setTitleColor(UIColor(red: 81/255, green: 15/255, blue: 15/255, alpha: 1), for: .normal) // Set text color to red
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        
+        return button
+    }()
+
     
     let settingsButton: UIButton = {
         let button = UIButton()
@@ -64,13 +84,18 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+
         
         view.backgroundColor = UIColor(red: 216/255, green: 216/255, blue: 216/255, alpha: 1)
         view.addSubview(containerView)
         containerView.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, height: 300)
         view.addSubview(nameLabel)
         view.addSubview(emaillabel)
+        view.addSubview(aboutTitle)
+        
+        aboutTitle.anchor(top: containerView.bottomAnchor, left: view.leftAnchor, paddingTop: 20, paddingLeft: 55)
+        view.addSubview(postsTitle)
+        postsTitle.anchor(top: containerView.bottomAnchor, right: view.rightAnchor, paddingTop: 20, paddingRight: 55)
         nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         nameLabel.anchor(top: profileImageView.bottomAnchor, paddingTop: 12)
         emaillabel.anchor(top: nameLabel.bottomAnchor, paddingTop: 12)
@@ -78,7 +103,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: (view.frame.size.width/3)-4, height: (view.frame.size.width/3)-4)
+        layout.itemSize = CGSize(width: (view.frame.size.width/3)-12, height: (view.frame.size.width/3)-12)
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -101,12 +126,15 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return 9
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomProfileCollectionViewCell.identifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomProfileCollectionViewCell.identifier, for: indexPath) as! CustomProfileCollectionViewCell
         cell.contentView.backgroundColor = UIColor(red: 81/255, green: 15/255, blue: 15/255, alpha: 1)
+        
+        
+        cell.configure(label: "08/\(indexPath.row+1)/2023", image: postsImageArray[indexPath.row])
         return cell
     }
 
