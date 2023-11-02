@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bxc-eW-r27">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bxc-eW-r27">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,22 +54,6 @@
             </objects>
             <point key="canvasLocation" x="919.84732824427476" y="-2.1126760563380285"/>
         </scene>
-        <!--Chat-->
-        <scene sceneID="kfC-c8-vbg">
-            <objects>
-                <viewController id="up8-nD-TdS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zxT-Go-gnf">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="J8X-Fi-V6R"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Chat" image="text.bubble" catalog="system" id="j3b-zX-v9H"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DCJ-il-miQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1656" y="-2"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="tTo-db-jiA">
             <objects>
@@ -98,13 +82,63 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="X3X-Hq-Pt6"/>
                         <segue destination="MGv-sg-5hx" kind="relationship" relationship="viewControllers" id="BOx-TD-lxl"/>
-                        <segue destination="up8-nD-TdS" kind="relationship" relationship="viewControllers" id="u6Y-26-XWg"/>
                         <segue destination="aty-ii-xv1" kind="relationship" relationship="viewControllers" id="xiD-XU-G8q"/>
+                        <segue destination="aTM-Hr-nIl" kind="relationship" relationship="viewControllers" id="sJF-b8-xIn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g34-uw-wpX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1297" y="-869"/>
+        </scene>
+        <!--Messeges-->
+        <scene sceneID="zTl-Ez-rqb">
+            <objects>
+                <viewController id="Nkg-Cd-avf" customClass="NamesListViewController" customModule="MusicianMoments_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XsH-Tb-MWp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2aw-Xx-EDX">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Sh-fr-Xzf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2aw-Xx-EDX" firstAttribute="top" secondItem="3Sh-fr-Xzf" secondAttribute="top" id="13B-rQ-8Qb"/>
+                            <constraint firstItem="3Sh-fr-Xzf" firstAttribute="trailing" secondItem="2aw-Xx-EDX" secondAttribute="trailing" id="AY6-yg-whI"/>
+                            <constraint firstItem="3Sh-fr-Xzf" firstAttribute="bottom" secondItem="2aw-Xx-EDX" secondAttribute="bottom" id="UR0-m2-aof"/>
+                            <constraint firstItem="2aw-Xx-EDX" firstAttribute="leading" secondItem="3Sh-fr-Xzf" secondAttribute="leading" id="bZ5-Vs-Itp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Messeges" id="U8u-6g-G7i"/>
+                    <connections>
+                        <outlet property="myTable" destination="2aw-Xx-EDX" id="fn6-oD-pAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IsR-Fn-zJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="696"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="YMs-Q7-k3N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aTM-Hr-nIl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="text.bubble" catalog="system" id="hg0-QR-hFV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hXe-Ze-m9m">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nkg-Cd-avf" kind="relationship" relationship="rootViewController" id="A0e-lo-rSY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBJ-3T-sku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="-2"/>
         </scene>
     </scenes>
     <resources>
@@ -112,11 +146,11 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
