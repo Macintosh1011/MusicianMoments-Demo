@@ -88,7 +88,8 @@ class ChatViewController: MessagesViewController {
         view.backgroundColor = .red
 
        
-        messages.append(Message(sender: currentSender, messageId: "10293", sentDate: Date().addingTimeInterval(-26400), kind: .text("Sped IN The head")))
+        messages.append(Message(sender: currentSender, messageId: "1", sentDate: Date().addingTimeInterval(-26400), kind: .text("Sped IN The head")))
+  
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
@@ -122,8 +123,7 @@ extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, Messag
         return Sender(photoURL: "", senderId: "", displayName: "")
     }
     
-
-
+    
 
 
     }
