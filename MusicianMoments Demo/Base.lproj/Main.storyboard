@@ -71,7 +71,7 @@
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5VV-hj-Rzz"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.32549020649999999" green="0.088734673390000005" blue="0.079590590399999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="skb-CS-Mm7"/>
                     <connections>
