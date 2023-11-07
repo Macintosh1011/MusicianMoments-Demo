@@ -73,6 +73,14 @@ class ChatViewController: MessagesViewController {
                       senderId: email,
                       displayName: "Joe Smith")
     }
+    
+    private var otherSelfSender: Sender? {
+       
+
+        return Sender(photoURL: "",
+                      senderId: "122343",
+                      displayName: "Joe Smith")
+    }
 
     init(with email: String) {
         self.otherUserEmail = email
@@ -89,7 +97,7 @@ class ChatViewController: MessagesViewController {
 
        
         messages.append(Message(sender: currentSender, messageId: "1", sentDate: Date().addingTimeInterval(-46400), kind: .text("Sped IN The head")))
-        messages.append(Message(sender: otherUserEmail, messageId: "2", sentDate: Date().addingTimeInterval(-26400), kind: .text("Sped IN The head")))
+        messages.append(Message(sender: otherSender, messageId: "2", sentDate: Date().addingTimeInterval(-26400), kind: .text("Sped IN The head")))
   
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
@@ -123,9 +131,21 @@ extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, Messag
             
         }
         
-        return Sender(photoURL: "", senderId: "", displayName: "")
+        
+        
+        return Sender(photoURL: "", senderId: "2342343", displayName: "Daddy Khan")
     }
     
+    var otherSender: MessageKit.SenderType {
+        if let sender = otherSelfSender {
+            return sender
+            
+        }
+        
+        
+        
+        return Sender(photoURL: "", senderId: "293847", displayName: "Idan Kestenbom")
+    }
     
 
 
