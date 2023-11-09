@@ -96,8 +96,9 @@ class ChatViewController: MessagesViewController {
         view.backgroundColor = .red
 
        
-        messages.append(Message(sender: currentSender, messageId: "1", sentDate: Date().addingTimeInterval(-46400), kind: .text("Sped IN The head")))
-        messages.append(Message(sender: otherSender, messageId: "2", sentDate: Date().addingTimeInterval(-26400), kind: .text("Sped IN The head")))
+        messages.append(Message(sender: currentSender, messageId: "1", sentDate: Date().addingTimeInterval(-66400), kind: .text("Hey, could you help me with he G flat scale?")))
+        messages.append(Message(sender: otherSender, messageId: "2", sentDate: Date().addingTimeInterval(-46400), kind: .text("Yeah ofc")))
+        messages.append(Message(sender: otherSender, messageId: "3", sentDate: Date().addingTimeInterval(-26400), kind: .text("Send me a video of what you have so far")))
   
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
@@ -150,6 +151,31 @@ extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, Messag
 
 
     }
+
+extension ChatViewController: InputBarAccessoryViewDelegate {
+    func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
+        // Ensure there is text to send
+        guard !text.isEmpty else {
+            return
+        }
+    
+        let newMessage = Message(sender: currentSender, messageId: UUID().uuidString, sentDate: Date(), kind: .text(text))
+        
+        // Add the new message to your messages array
+        messages.append(newMessage)
+        
+        // Reload the collection view and scroll to the last item
+        DispatchQueue.main.async {
+            self.messagesCollectionView.reloadData()
+            self.messagesCollectionView.scrollToLastItem()
+        }
+        
+        // Clear the input text view
+        inputBar.inputTextView.text = ""
+    }
+
+    
+ }
 
 
 
