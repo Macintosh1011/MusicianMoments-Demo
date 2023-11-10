@@ -3,4 +3,225 @@
    uuid = "319BAEBA-4509-4D58-9A45-6218E51C99DB"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22DBF793-A6CD-44B1-9D41-D6D2498A0555"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MusicianMoments Demo/FinalTouchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "22DBF793-A6CD-44B1-9D41-D6D2498A0555 - 4079daac39c0279a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "4480">
+               </Location>
+               <Location
+                  uuid = "22DBF793-A6CD-44B1-9D41-D6D2498A0555 - 4079daac39c02479"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "4480">
+               </Location>
+               <Location
+                  uuid = "22DBF793-A6CD-44B1-9D41-D6D2498A0555 - 4079daac39c02479"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "4608">
+               </Location>
+               <Location
+                  uuid = "22DBF793-A6CD-44B1-9D41-D6D2498A0555 - 4079daac39c02458"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "4992">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2ADAB96-E67B-4FEF-ACDC-2F192617FA76"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MusicianMoments Demo/FinalTouchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D2ADAB96-E67B-4FEF-ACDC-2F192617FA76 - 4079daac39c02540"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "5444">
+               </Location>
+               <Location
+                  uuid = "D2ADAB96-E67B-4FEF-ACDC-2F192617FA76 - 4079daac39c02527"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "5444">
+               </Location>
+               <Location
+                  uuid = "D2ADAB96-E67B-4FEF-ACDC-2F192617FA76 - 4079daac39c02527"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "5628">
+               </Location>
+               <Location
+                  uuid = "D2ADAB96-E67B-4FEF-ACDC-2F192617FA76 - 4079daac39c02506"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MusicianMoments_Demo.FinalTouchViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/FinalTouchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "5932">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33F02BEB-EC29-4384-B508-972AABA3C373"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MusicianMoments Demo/CameraViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "stopRecording()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33F02BEB-EC29-4384-B508-972AABA3C373 - 698e9c1f83adbd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in MusicianMoments_Demo.CameraViewController.stopRecording() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/CameraViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "33F02BEB-EC29-4384-B508-972AABA3C373 - 698e9c1f83adbd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in MusicianMoments_Demo.CameraViewController.stopRecording() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/CameraViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "33F02BEB-EC29-4384-B508-972AABA3C373 - 698e9c1f83adbd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in MusicianMoments_Demo.CameraViewController.stopRecording() -&gt; ()"
+                  moduleName = "MusicianMoments Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idankestenbom/Documents/MusicianMoments%20Demo/MusicianMoments%20Demo/CameraViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "174"
+                  endingLineNumber = "174"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -51,19 +51,19 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func setupData() {
-        data.append("John")
-        data.append("Abe")
-        data.append("Idan")
-        data.append("Dan")
-        data.append("Zach")
-        data.append("Luke")
-        data.append("Kevin")
-        data.append("Briana")
-        data.append("Melenie")
-        data.append("Sarah")
-        data.append("Shawn")
-        data.append("Teri")
-        data.append("Tom")
+        data.append("Idan Kestenbom")
+        data.append("Aaron Sun")
+        data.append("Mishali Pandey")
+        data.append("Aadit Sood")
+        data.append("Idan Kestenbom")
+        data.append("Vansh Bahety")
+        data.append("Kevin Mathew")
+        data.append("Briana Goenka")
+        data.append("Melenie Adler")
+        data.append("Sarah Townhouse")
+        data.append("Shawn Goen")
+        data.append("Daddy Khan")
+        data.append("Tom B.")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

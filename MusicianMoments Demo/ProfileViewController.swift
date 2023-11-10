@@ -10,7 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
         
-    var postsImageArray = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9")]
+    var postsImageArray = [UIImage(named: "Aadit1"),UIImage(named: "Aadit2"),UIImage(named: "Aadit3"),UIImage(named: "Aadit4"),UIImage(named: "Aadit5"),UIImage(named: "Aadit6"),UIImage(named: "Aadit7"),UIImage(named: "Aadit8"),UIImage(named: "Aadit9")]
     lazy var containerView: UIView = {
         let cv = UIView()
         cv.backgroundColor = UIColor(red: 81/255, green: 15/255, blue: 15/255, alpha: 1)
@@ -63,7 +63,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     let nameLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "Idan Kestenbom"
+        label.text = "Aadit Sood"
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.textColor = .white
         return label
@@ -72,7 +72,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     let emaillabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "@kestenbom_idan"
+        label.text = "@soodie_patootie"
         label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .white
         return label

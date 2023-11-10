@@ -11,7 +11,7 @@ class GenericProfile: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     
     var selecteduserr: String? = nil
-    var postsImageArray = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9")]
+    var postsImageArray = [UIImage(named: "Vansh1"),UIImage(named: "Vansh2"),UIImage(named: "Vansh3"),UIImage(named: "Vansh4"),UIImage(named: "Vansh5"),UIImage(named: "Vansh6"),UIImage(named: "Vansh7"),UIImage(named: "Vansh8"),UIImage(named: "Vansh9")]
     lazy var containerView: UIView = {
         let cv = UIView()
         cv.backgroundColor = UIColor(red: 81/255, green: 15/255, blue: 15/255, alpha: 1)
@@ -19,13 +19,16 @@ class GenericProfile: UIViewController, UICollectionViewDelegate, UICollectionVi
         profileImageView.centerXAnchor.constraint(equalTo: cv.centerXAnchor).isActive = true
         profileImageView.anchor(top: cv.topAnchor, paddingTop: 88, width: 120, height: 120)
         cv.addSubview(settingsButton)
+        cv.addSubview(backButton)
         settingsButton.anchor(top: cv.topAnchor, right: cv.rightAnchor, paddingTop: 44, paddingRight: 32, width: 32, height: 32)
+        backButton.anchor(top: cv.topAnchor, left: cv.leftAnchor, paddingTop: 44, paddingLeft: 32, width: 32, height: 32)
+        cv.bringSubviewToFront(backButton)
         return cv
     }()
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "pfp")
+        imageView.image = UIImage(named: "pfp1")
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.layer.borderWidth = 3
@@ -61,11 +64,18 @@ class GenericProfile: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return button
     }()
+    
+    let backButton: UIButton = {
+        let button = UIButton()
+        button.tintColor = .white
+        button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
+        
+        return button
+    }()
     let nameLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        let profileInstance = GenericProfile()
-        label.text = "\(profileInstance.selecteduserr)"
+        label.text = "Vansh Bahety"
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.textColor = .white
         return label
@@ -74,7 +84,7 @@ class GenericProfile: UIViewController, UICollectionViewDelegate, UICollectionVi
     let emaillabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "@kestenbom_idan"
+        label.text = "@Vunchie_Munchie"
         label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .white
         return label
@@ -119,6 +129,7 @@ class GenericProfile: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.backgroundColor = UIColor(red: 216/255, green: 216/255, blue: 216/255, alpha: 1)
         collectionView.frame = CGRect(x: 0, y: containerView.frame.maxY+400, width: view.frame.width, height: view.frame.height - containerView.frame.maxY)
  
+        backButton.addTarget(self, action: #selector(backbuttonpressed), for: .touchUpInside)
 
 
         
@@ -127,6 +138,11 @@ class GenericProfile: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
 
+    @objc func backbuttonpressed() {
+        
+        self.dismiss(animated: true)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 9
     }

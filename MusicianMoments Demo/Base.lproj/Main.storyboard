@@ -15,8 +15,220 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="2ge-SC-VZ6">
+                                <rect key="frame" x="25" y="75" width="343" height="663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEP-FU-AnP">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bY5-8F-hl5">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWY-wN-S6c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.3529411764705882" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7i-Rc-BYj">
+                                                        <rect key="frame" x="0.0" y="39" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="text.bubble" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tl-w0-Wah">
+                                                        <rect key="frame" x="0.0" y="78" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.31764705882352939" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mou-FH-bMZ">
+                                                        <rect key="frame" x="0.0" y="117" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.3529411764705882" green="0.062745098039215685" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littleAadit1" translatesAutoresizingMaskIntoConstraints="NO" id="Ez8-EO-Z3B">
+                                                <rect key="frame" x="103" y="0.0" width="240" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="iNb-4e-xVw"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esk-w9-xXF">
+                                        <rect key="frame" x="0.0" y="169" width="343" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fy0-xH-NAu">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-WP-1TJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipw-zs-zHm">
+                                                        <rect key="frame" x="0.0" y="39" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="text.bubble" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THY-ab-Q7z">
+                                                        <rect key="frame" x="0.0" y="78" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.31764705879999999" green="0.058823529409999999" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHf-6U-thv">
+                                                        <rect key="frame" x="0.0" y="117" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lp_image_210x280" translatesAutoresizingMaskIntoConstraints="NO" id="3vh-9T-FNG">
+                                                <rect key="frame" x="103" y="0.0" width="240" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="cAg-lM-uYV"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0p3-56-eAF">
+                                        <rect key="frame" x="0.0" y="338" width="343" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aYN-Zi-x6T">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRC-Hh-ycq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXd-6w-rrJ">
+                                                        <rect key="frame" x="0.0" y="39" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="text.bubble" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgf-lF-H9h">
+                                                        <rect key="frame" x="0.0" y="78" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.31764705879999999" green="0.058823529409999999" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLu-MJ-8fq">
+                                                        <rect key="frame" x="0.0" y="117" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vunchie_210x280" translatesAutoresizingMaskIntoConstraints="NO" id="Q0Q-af-bkL">
+                                                <rect key="frame" x="103" y="0.0" width="240" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="NG3-Uy-zdB"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-rv-fAg">
+                                        <rect key="frame" x="0.0" y="507" width="343" height="156"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdv-du-E1S">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3s-Xl-gJZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFA-FS-ICn">
+                                                        <rect key="frame" x="0.0" y="39" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="text.bubble" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLr-cI-hjs">
+                                                        <rect key="frame" x="0.0" y="78" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.31764705879999999" green="0.058823529409999999" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYc-jf-nu5">
+                                                        <rect key="frame" x="0.0" y="117" width="103" height="39"/>
+                                                        <color key="tintColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mahati_210x280-2" translatesAutoresizingMaskIntoConstraints="NO" id="aGw-G2-pQT">
+                                                <rect key="frame" x="103" y="0.0" width="240" height="156"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="f0U-lG-F1t"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oIC-W8-2AO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="67"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oIC-W8-2AO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Qh-Fx-iPA"/>
+                            <constraint firstItem="oIC-W8-2AO" firstAttribute="centerX" secondItem="2ge-SC-VZ6" secondAttribute="centerX" id="PX1-Mf-t85"/>
+                            <constraint firstItem="2ge-SC-VZ6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="cKE-c9-21n"/>
+                            <constraint firstItem="2ge-SC-VZ6" firstAttribute="top" secondItem="oIC-W8-2AO" secondAttribute="bottom" constant="8" symbolic="YES" id="fj8-DA-3zG"/>
+                            <constraint firstItem="2ge-SC-VZ6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="75" id="qJh-cr-RYL"/>
+                            <constraint firstAttribute="trailing" secondItem="2ge-SC-VZ6" secondAttribute="trailing" constant="25" id="vZy-aj-eew"/>
+                            <constraint firstItem="oIC-W8-2AO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wGT-lg-WCz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="AoT-re-CtO"/>
                 </viewController>
@@ -172,10 +384,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hand.thumbsdown" catalog="system" width="123" height="128"/>
+        <image name="hand.thumbsup" catalog="system" width="123" height="128"/>
         <image name="house" catalog="system" width="128" height="104"/>
+        <image name="littleAadit1" width="70" height="93.333335876464844"/>
+        <image name="lp_image_210x280" width="70" height="93.333335876464844"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="mahati_210x280-2" width="70" height="93.333335876464844"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <image name="vunchie_210x280" width="70" height="93.333335876464844"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
