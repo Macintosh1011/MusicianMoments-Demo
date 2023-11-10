@@ -17,6 +17,7 @@
 		3C4FFD612AE81EF800399D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4FFD5F2AE81EF800399D5F /* LaunchScreen.storyboard */; };
 		3CE929162AEDB2FA00C25858 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE929152AEDB2FA00C25858 /* ProfileViewController.swift */; };
 		3CE929182AEECB0200C25858 /* CustomProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE929172AEECB0200C25858 /* CustomProfileCollectionViewCell.swift */; };
+		D20374952AFDA64B00B7DCDB /* GenericProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20374942AFDA64B00B7DCDB /* GenericProfile.swift */; };
 		D24DFAA62AF45E6F006FCB4F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DFAA52AF45E6F006FCB4F /* ChatViewController.swift */; };
 		D24DFAA92AF4621E006FCB4F /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = D24DFAA82AF4621E006FCB4F /* MessageKit */; };
 		D28D68DE2AF2FE5A0081F25D /* NamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28D68DD2AF2FE5A0081F25D /* NamesListViewController.swift */; };
@@ -35,6 +36,7 @@
 		3C4FFD622AE81EF800399D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CE929152AEDB2FA00C25858 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3CE929172AEECB0200C25858 /* CustomProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		D20374942AFDA64B00B7DCDB /* GenericProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericProfile.swift; sourceTree = "<group>"; };
 		D24DFAA52AF45E6F006FCB4F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D28D68DD2AF2FE5A0081F25D /* NamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				3C4FFD622AE81EF800399D5F /* Info.plist */,
 				D28D68DD2AF2FE5A0081F25D /* NamesListViewController.swift */,
 				D24DFAA52AF45E6F006FCB4F /* ChatViewController.swift */,
+				D20374942AFDA64B00B7DCDB /* GenericProfile.swift */,
 			);
 			path = "MusicianMoments Demo";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				3CE929162AEDB2FA00C25858 /* ProfileViewController.swift in Sources */,
 				3CE929182AEECB0200C25858 /* CustomProfileCollectionViewCell.swift in Sources */,
 				3C2BBB262AF1B839006C2505 /* SearchViewController.swift in Sources */,
+				D20374952AFDA64B00B7DCDB /* GenericProfile.swift in Sources */,
 				3C4FFD592AE81EF700399D5F /* ViewController.swift in Sources */,
 				3C4FFD552AE81EF700399D5F /* AppDelegate.swift in Sources */,
 				3C4B586A2AE9749B00B27BF0 /* CustomCell.swift in Sources */,

@@ -89,4 +89,24 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return cell
     }
+    
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        var user = ""
+    switch selectedScope {
+    case 1:
+        user = "Idan"
+    case 2:
+        user = "Mahati"
+    case 2:
+        user = "Aaron"
+    case 2:
+        user = "Aadit"
+    case 2:
+        user = "Mishali"
+    case 6:
+        user = "Vansh"
+    default:
+        <#code#>
+    }
+    }
 }
