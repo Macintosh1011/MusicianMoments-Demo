@@ -7,9 +7,10 @@
 
 import UIKit
 
-class JohnProfile: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class GenericProfile: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-        
+    
+    var selecteduserr: String? = nil
     var postsImageArray = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9")]
     lazy var containerView: UIView = {
         let cv = UIView()
@@ -63,7 +64,8 @@ class JohnProfile: UIViewController, UICollectionViewDelegate, UICollectionViewD
     let nameLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "Idan Kestenbom"
+        let profileInstance = GenericProfile()
+        label.text = "\(profileInstance.selecteduserr)"
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.textColor = .white
         return label

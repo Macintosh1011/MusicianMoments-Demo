@@ -90,23 +90,34 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        var user = ""
-    switch selectedScope {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var selectedUser = ""
+        
+        
+        switch indexPath.item {
     case 1:
-        user = "Idan"
+        selectedUser = "Idan"
     case 2:
-        user = "Mahati"
-    case 2:
-        user = "Aaron"
-    case 2:
-        user = "Aadit"
-    case 2:
-        user = "Mishali"
+        selectedUser = "Mahati"
+    case 3:
+        selectedUser = "Aaron"
+    case 4:
+        selectedUser = "Aadit"
+    case 5:
+        selectedUser = "Mishali"
     case 6:
-        user = "Vansh"
+        selectedUser = "Vansh"
     default:
-        <#code#>
+        selectedUser = ""
     }
+    
+    
+        let vc = GenericProfile()
+        vc.selecteduserr = selectedUser
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
     }
+    
+    
 }
