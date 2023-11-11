@@ -107,10 +107,11 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lp_image_210x280" translatesAutoresizingMaskIntoConstraints="NO" id="3vh-9T-FNG">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="55040936-A71A-4410-95BF-D0A17BAC46FF_1_105_c" translatesAutoresizingMaskIntoConstraints="NO" id="3vh-9T-FNG">
                                                 <rect key="frame" x="103" y="0.0" width="240" height="156"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="cAg-lM-uYV"/>
+                                                    <constraint firstAttribute="height" constant="156" id="qOD-dm-pcT"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -128,6 +129,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="vanshButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDu-zb-vPc"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXd-6w-rrJ">
                                                         <rect key="frame" x="0.0" y="39" width="103" height="39"/>
@@ -217,20 +221,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="67"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJD-D5-Wot">
+                                <rect key="frame" x="144" y="746" width="104" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="record.circle" catalog="system" title="Record">
+                                    <color key="baseForegroundColor" red="0.35294117650000001" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="recordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YtO-mH-u0l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oIC-W8-2AO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Qh-Fx-iPA"/>
                             <constraint firstItem="oIC-W8-2AO" firstAttribute="centerX" secondItem="2ge-SC-VZ6" secondAttribute="centerX" id="PX1-Mf-t85"/>
+                            <constraint firstItem="LJD-D5-Wot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="Xsn-oX-myc"/>
                             <constraint firstItem="2ge-SC-VZ6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="cKE-c9-21n"/>
                             <constraint firstItem="2ge-SC-VZ6" firstAttribute="top" secondItem="oIC-W8-2AO" secondAttribute="bottom" constant="8" symbolic="YES" id="fj8-DA-3zG"/>
                             <constraint firstItem="2ge-SC-VZ6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="75" id="qJh-cr-RYL"/>
+                            <constraint firstItem="LJD-D5-Wot" firstAttribute="top" secondItem="2ge-SC-VZ6" secondAttribute="bottom" constant="8" symbolic="YES" id="tOR-nH-Tc0"/>
                             <constraint firstAttribute="trailing" secondItem="2ge-SC-VZ6" secondAttribute="trailing" constant="25" id="vZy-aj-eew"/>
                             <constraint firstItem="oIC-W8-2AO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wGT-lg-WCz"/>
+                            <constraint firstItem="LJD-D5-Wot" firstAttribute="centerX" secondItem="2ge-SC-VZ6" secondAttribute="centerX" id="yGE-N6-5xP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="AoT-re-CtO"/>
+                    <connections>
+                        <outlet property="imageView" destination="Q0Q-af-bkL" id="hA9-iC-ooI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,14 +404,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="55040936-A71A-4410-95BF-D0A17BAC46FF_1_105_c" width="241.33332824707031" height="362"/>
         <image name="hand.thumbsdown" catalog="system" width="123" height="128"/>
         <image name="hand.thumbsup" catalog="system" width="123" height="128"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="littleAadit1" width="70" height="93.333335876464844"/>
-        <image name="lp_image_210x280" width="70" height="93.333335876464844"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="mahati_210x280-2" width="70" height="93.333335876464844"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="record.circle" catalog="system" width="128" height="123"/>
         <image name="text.bubble" catalog="system" width="128" height="110"/>
         <image name="vunchie_210x280" width="70" height="93.333335876464844"/>
         <systemColor name="systemBackgroundColor">

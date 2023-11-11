@@ -16,7 +16,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var movieOutput: AVCaptureMovieFileOutput?
     var recordingTimer: Timer?
-    var secondsRemaining = 3 //FIXME: change back to 15 seconds.
+    var secondsRemaining = 15 //FIXME: change back to 15 seconds.
 
     let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     let outputDirectory = "RecordedVideos"
